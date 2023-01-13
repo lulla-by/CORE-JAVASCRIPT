@@ -12,6 +12,8 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
-        "no-unused-vars":"off"
+        "no-unused-vars":"off",
+        // 선언하지 않은걸 호출해도 에러표시 안뜨게
+        "no-undef:'off"
     }
 }
