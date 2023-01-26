@@ -18,13 +18,14 @@ import {
 //유저카드 생성
 //생성된 카드로 렌더링
 const userCardContainer =  $(".user-card-inner");
+console.log(userCardContainer)
 const rendingUserList = async () => {
   renderSpinner(userCardContainer);
   try {
     await delayP(1000);
     $('.loadingSpinner').remove();
     let response = await losey.get("http://localhost:3000/users"
-    );
+    );console.log(response)
     let userData = response.data;
     console.log(userData);
 

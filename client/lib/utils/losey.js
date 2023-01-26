@@ -66,7 +66,7 @@ losey.put = (url,body,options) =>{
 losey.delete = (url,options) =>{
   return losey({
     method:'DELETE',
-    url,
+    url:url,
     ...options
   })
 }
